@@ -11,13 +11,25 @@
        padding: 0;
        box-sizing: border-box;
      }
-    header, footer {
-      Background-colour: #333;
-      colour: white;
+    header{
+      Background-colour: #533;
+      colour: red;
       text-align: center;
       padding: 10px;
     }
 
+    .header-content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    } 
+
+    nav {
+      display: flex;
+      align-items: center;
+      background-color: #555;
+      padding: 10px;
+    } 
     nav a {
       colour: white;
       text-decoration: none;
@@ -28,6 +40,15 @@
     main {
       padding: 20px;
     }
+
+    .signup-login {
+      margin-left: auto;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    } 
   
     .logo {
       width: 150px;
@@ -39,17 +60,19 @@
   
 <body>
   <header>
+    <div class="header-content">
      <img src = "SM1GIMP.jpg" alt = "SpeedStar Motors Logo" class = "logo"/>
     <h1>Welcome to SpeedStar Motors</h1>
-  </header>
-
-  <nav>
+   </div>
+    <nav>
     <a href="#">Home</a>
     <a href="#">Cars</a>
     <a href= "#">Services</a>
     <a href="#">Contact</a>  
-    
+    <button class= "signup-login">Sign Up/Login</button>
     </nav>
+
+  </header>
 
 <main>
   <img src = "BMW.jpg" width = "300" height = "200"/>
