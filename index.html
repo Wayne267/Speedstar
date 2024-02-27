@@ -67,6 +67,24 @@
       border: none;
       cursor: pointer;
     } 
+        /* Dropdown styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #555;
+            min-width: 160px;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
   
     .logo {
       width: 165px;
@@ -97,7 +115,7 @@
        </div>
     <nav>
     <a href="#">Home</a>
-    <a href="#">Cars</a>
+    <a href="cars.html">Cars</a>
     <a href= "services.html">Services</a>
     <a href="#">Contact</a>  
     <button class= "signup-login">Sign Up/Login</button>
