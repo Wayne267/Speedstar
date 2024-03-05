@@ -1,72 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-  <link rel="icon" href="SPEEDSTAR.ico" type="image/x-icon">
-  <title>Speedstar Motors | Home </title>
-  <style>
-     body { 
-       font-family: Arial, sans-serif;
-       margin: 0;
-       padding: 0;
-       box-sizing: border-box;
-       overflow: hidden;
-     }
-.video-container {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="SPEEDSTAR.ico" type="image/x-icon">
+    <title>Speedstar Motors | Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        .video-container {
             position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             overflow: hidden;
-            z-index: -1; /* Place the video behind other content */
-    
-    header{
-      Background-colour:  rgba(0, 0, 0, 0.5); /* Semi-transparent background to improve text readability */;
-      colour: blue;
-      text-align: center;
-      padding: 10px;
-    }
+            z-index: -1;
+        }
 
-    .header-content{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    } 
+        #intro-video {
+            width: 100%;
+        }
 
-    nav {
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: blue;
+            text-align: center;
+            padding: 10px;
+        }
 
-      display: flex;
-      justify-content: center;
-      background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background to improve text readability */;
-      padding: 10px;
-      z-index: 1; /* Place the navigation above the video */
-    } 
-    nav a {
-      colour: white;
-      text-decoration: none;
-      padding: 10px;
-      margin: 0 10px;
-      transition: color 0.3s; /* Smooth color transition on hover */
-    }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
 
- nav a:hover {
-            color: #4CAF50; /* Change color on hover */
-  
-    main {
-      padding: 20px;
-       z-index: 1; /* Place the content above the video */
-    }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            z-index: 1;
+        }
 
-    .signup-login {
-      margin-left: auto;
-      padding: 10px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    } 
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #4CAF50;
+        }
+
+        main {
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .signup-login {
+            margin-left: auto;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
         /* Dropdown styles */
         .dropdown {
             position: relative;
@@ -78,64 +86,68 @@
             position: absolute;
             background-color: #555;
             min-width: 160px;
-            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
 
         .dropdown:hover .dropdown-content {
             display: block;
         }
-  
-    .logo {
-      width: 165px;
-      height: 120px;
-    }
-   /* Add some spacing between images */
+
+        .logo {
+            width: 165px;
+            height: 120px;
+        }
+
+        /* Add some spacing between images */
         .image-container img {
             margin-right: 10px;
-           
         }
-   /* Set up a flex container */
+
+        /* Set up a flex container */
         .image-container {
             display: flex;
+        }
     </style>
 </head>
-
-  
-<body> 
-   <div class="video-container">
+<body>
+    <div class="video-container">
         <video id="intro-video" autoplay muted loop>
             <source src="BACK.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>
-  <header>
-    <div class="header-content">
-     <img src = "SPEEDSTAR.png" alt = "SpeedStar Motors Logo" class = "logo"/>
-       </div>
+
+    <header>
+        <div class="header-content">
+            <img src="SPEEDSTAR.png" alt="SpeedStar Motors Logo" class="logo"/>
+        </div>
+    </header>
+
     <nav>
-    <a href="#">Home</a>
-    <a href="cars.html">Cars</a>
-    <a href= "services.html">Services</a>
-    <a href="#">Contact</a>  
-    <button class= "signup-login">Sign Up/Login</button>
+        <a href="#">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="services.html">Services</a>
+        <a href="#">Contact</a>
+        <button class="signup-login">Sign Up/Login</button>
     </nav>
 
-  </header>
+    <main>
+        <h1>Welcome to SpeedStar Motors</h1>
+        <div class="image-container">
+            <img src="BMW.jpg" width="300" height="200"/>
+            <img src="BMW2.jpg" width="300" height="200"/>
+            <img src="SF90.jpg" width="300" height="200"/>
+            <img src="765LT.jpg" width="300" height="200"/>
+            <img src="jesko.jpg" width="300" height="200"/>
+        </div>
+        <h2>Explore The Latest Cars</h2>
+        <p>Discover a wide range of high-quality vehicles at SpeedStar Motors. Browse our collection and find the perfect car for you.</p>
+    </main>
 
-<main>
-  <h1>Welcome to SpeedStar Motors</h1>
-  <img src = "BMW.jpg" width = "300" height = "200"/>
-  <img src = "BMW2.jpg" width = "300" height = "200"/>
-  <img src = "SF90.jpg" width = "300" height = "200"/>
-    <img src = "765LT.jpg" width = "300" height ="200"/>
-  <img src = "jesko.jpg" width = "300" height ="200"/>
-  <h2>Explore The Latest Cars</h2>
-  <p>Discover a wide range of high quality vehicles at SpeedStar Motors. Browse our collection and find the perfect car for you.</p>
-</main> 
-  <footer>
-    <p>&copy; 2024 SpeedStar Motors. All rights reserved.</p>
-    <p>Contact us at: info@Speedstar.com</p>
-  </footer>
+    <footer>
+        <p>&copy; 2024 SpeedStar Motors. All rights reserved.</p>
+        <p>Contact us at: info@Speedstar.com</p>
+    </footer>
 </body>
 </html>
